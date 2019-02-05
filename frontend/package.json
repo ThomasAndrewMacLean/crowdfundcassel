@@ -1,0 +1,16 @@
+{
+    "name": "frontend",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "cp -R ./static ./dist && parcel src/index.html",
+        "build": "cp -R ./static ./dist && parcel build src/index.html"
+    },
+    "keywords": [],
+    "author": "Thomas MacLean <hello@thomasmaclean.be> (https://thomasmaclean.be)",
+    "license": "MIT",
+    "devDependencies": {
+        "parcel-bundler": "^1.11.0"
+    }
+}

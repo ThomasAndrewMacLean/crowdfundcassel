@@ -1,0 +1,30 @@
+{
+    "name": "crowdfundcassel",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "claudia-init": "claudia create --region eu-west-1 --api-module index --policies policy",
+        "claudia": "claudia update"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ThomasAndrewMacLean/crowdfundcassel.git"
+    },
+    "keywords": [],
+    "author": "Thomas MacLean <hello@thomasmaclean.be> (https://thomasmaclean.be)",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/ThomasAndrewMacLean/crowdfundcassel/issues"
+    },
+    "homepage": "https://github.com/ThomasAndrewMacLean/crowdfundcassel#readme",
+    "dependencies": {
+        "aws-sdk": "^2.395.0",
+        "claudia-api-builder": "^4.1.2",
+        "node-fetch": "^2.3.0"
+    },
+    "devDependencies": {
+        "claudia": "^5.3.0"
+    }
+}

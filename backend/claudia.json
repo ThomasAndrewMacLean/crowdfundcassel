@@ -1,0 +1,11 @@
+{
+  "lambda": {
+    "role": "crowdfundcassel-executor",
+    "name": "crowdfundcassel",
+    "region": "eu-west-1"
+  },
+  "api": {
+    "id": "z0l80enr3f",
+    "module": "index"
+  }
+}
