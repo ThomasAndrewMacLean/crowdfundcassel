@@ -11,6 +11,12 @@
     "author": "Thomas MacLean <hello@thomasmaclean.be> (https://thomasmaclean.be)",
     "license": "MIT",
     "devDependencies": {
-        "parcel-bundler": "^1.11.0"
+        "@vue/component-compiler-utils": "^2.5.2",
+        "parcel-bundler": "^1.11.0",
+        "vue-template-compiler": "^2.6.2"
+    },
+    "dependencies": {
+        "vue": "^2.6.2",
+        "vue-hot-reload-api": "^2.3.1"
     }
 }
