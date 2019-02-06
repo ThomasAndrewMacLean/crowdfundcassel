@@ -67,7 +67,7 @@
       <button type="submit" class="btn btn-primary">STEUN CASSEL</button>
       <footer class="footer">
       <div class="container">
-        <span class="text-muted">Giften boven de €40 zijn fiscaal aftrekbaar (niet door oil).</span>
+        <span class="text-muted mt-5">Giften boven de €40 zijn fiscaal aftrekbaar (niet door Oil).</span>
       </div>
     </footer>
     </form>
