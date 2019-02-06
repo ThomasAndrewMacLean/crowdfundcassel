@@ -3,10 +3,10 @@
 <template>
   <div class="container">
     <h1 class="h1 mb-4 pt-4">{{ title }}</h1>
-    <h3>€ {{funds.reduce((a,b)=>{return a + b.amount}, 0)}}/{{total}}</h3>
+    <h3>€ {{funds.reduce((a,b)=>{return a + parseFloat(b.amount)}, 0)}}/{{total}}</h3>
     <div class="meter mb-4">
       <span
-        v-bind:style="{ width: (funds.reduce((a,b)=>{return a + b.amount}, 0)/total)*100  + '%' }"
+        v-bind:style="{ width: (funds.reduce((a,b)=>{return a + parseFloat(b.amount)}, 0)/total)*100  + '%' }"
       ></span>
     </div>
     <button @click="showForm=true" class="btn btn-primary mb-4">DONEER</button>
