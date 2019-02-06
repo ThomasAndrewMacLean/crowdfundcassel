@@ -74,7 +74,7 @@ export default {
   name: 'App',
   data() {
     return {
-      title: 'BRENG OIL NAAR GENT💋',
+      title: 'BRENG OIL NAAR GENT💋🇹🇭',
       funds: [],
       showForm: false,
       name: '',
