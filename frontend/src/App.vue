@@ -181,7 +181,7 @@ form {
   left: 0;
   right: 0;
   z-index: 9999;
-  /* background: white; */
+  background: white;
   background-image: url('cassel.jpeg');
   background-position: center;
   background-repeat: no-repeat;
