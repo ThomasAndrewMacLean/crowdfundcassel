@@ -169,7 +169,10 @@ export default {
   /* color: white; */
 
   text-align: center;
-  background: white;
+  background: rgba(255, 255, 255, 0.7);
+}
+label {
+  color: white;
 }
 form {
   position: absolute;
@@ -178,7 +181,11 @@ form {
   left: 0;
   right: 0;
   z-index: 9999;
-  background: white;
+  /* background: white; */
+  background-image: url('cassel.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100vw;
   height: 100vh;
   padding: 2rem;
