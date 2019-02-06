@@ -65,6 +65,11 @@
       </div>
       <button @click="showForm=false" class="btn btn-secondary">cancel</button>
       <button type="submit" class="btn btn-primary">STEUN CASSEL</button>
+      <footer class="footer">
+      <div class="container">
+        <span class="text-muted">Giften boven de €40 zijn fiscaal aftrekbaar (niet door oil).</span>
+      </div>
+    </footer>
     </form>
   </div>
 </template>
