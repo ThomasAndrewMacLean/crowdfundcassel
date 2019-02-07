@@ -9,6 +9,8 @@
         v-bind:style="{ width: (funds.reduce((a,b)=>{return a + parseFloat(b.amount)}, 0)/total)*100  + '%' }"
       ></span>
     </div>
+    <!-- <button @click="play" class="btn btn-primary mb-4">PLAY</button> -->
+    <audio src="./littlebit.ogg" id="sound"></audio>
     <button @click="showForm=true" class="btn btn-primary mb-4">DONEER</button>
     <table class="table">
       <thead>
@@ -66,10 +68,12 @@
       <button @click="showForm=false" class="btn btn-secondary">cancel</button>
       <button type="submit" class="btn btn-primary">STEUN CASSEL</button>
       <footer class="footer mt-5">
-      <div class="container mt-5 p-3">
-        <span class="text-muted mt-5 p-4">Giften boven de €40 zijn fiscaal aftrekbaar (niet door Oil).</span>
-      </div>
-    </footer>
+        <div class="container mt-5 p-3">
+          <span
+            class="text-muted mt-5 p-4"
+          >Giften boven de €40 zijn fiscaal aftrekbaar (niet door Oil).</span>
+        </div>
+      </footer>
     </form>
   </div>
 </template>
@@ -101,6 +105,17 @@ export default {
   //     };
   //   },
   methods: {
+    // play() {
+    //   console.log('playing ');
+    //   document.getElementById('sound').play();
+    //   //   var media = new Audio('./littlebit.ogg');
+    //   //   const playPromise = media.play();
+    //   //   if (playPromise !== null) {
+    //   //     playPromise.catch(() => {
+    //   //       media.play();
+    //   //     });
+    //   //   }
+    // },
     fund() {
       fetch(
         'https://z0l80enr3f.execute-api.eu-west-1.amazonaws.com/latest/funds',
@@ -128,6 +143,7 @@ export default {
       this.name = '';
       this.message = '';
       this.showForm = false;
+      document.getElementById('sound').play();
     },
   },
 };
