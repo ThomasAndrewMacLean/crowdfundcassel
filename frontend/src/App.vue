@@ -87,7 +87,7 @@ export default {
       funds: [],
       showForm: false,
       name: '',
-      amount: 0,
+      amount: '',
       message: '',
       total: 10000,
     };
@@ -139,7 +139,7 @@ export default {
         amount: this.amount,
         message: this.message,
       });
-      this.amount = 0;
+      this.amount = '';
       this.name = '';
       this.message = '';
       this.showForm = false;
